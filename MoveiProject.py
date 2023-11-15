@@ -23,3 +23,10 @@ df.head()
 for col in df.columns:
     pct_missing = np.mean(df[col].isnull())
     print('{} - {}%'.format(col, round(pct_missing*100)))
+
+#converted the columns with float to int type
+df['budget'] = df['budget'].fillna(0).astype('int64')
+df['gross'] = df['gross'].fillna(0).astype('int64')
+
+#Extracting year from the column
+df['year'] = df['released'].str.extract(r'(\d{4})')
