@@ -37,3 +37,7 @@ df.sort_values(by="gross", inplace=True, ascending=False)
 
 # displaying all the raws and columns
 pd.set_option('display.max_rows', None)
+
+
+#df["company"].drop_duplicates().sort_values(ascending=False)
+df["company"].drop_duplicates()
