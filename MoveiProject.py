@@ -41,3 +41,8 @@ pd.set_option('display.max_rows', None)
 
 #df["company"].drop_duplicates().sort_values(ascending=False)
 df["company"].drop_duplicates()
+
+
+#High corelation
+# the more budget they spend the more they make
+# Company will have a high corelation
