@@ -49,3 +49,10 @@ df["company"].drop_duplicates()
 
 # plotting the budget vs gross
 plt.scatter(x=df["budget"], y=df["gross"])
+plt.title("Budget vs Gross")
+
+plt.xlabel("Gross Earning")
+
+plt.ylabel("Budget Earning")
+
+plt.show()
