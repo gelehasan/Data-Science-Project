@@ -30,3 +30,10 @@ df['gross'] = df['gross'].fillna(0).astype('int64')
 
 #Extracting year from the column
 df['year'] = df['released'].str.extract(r'(\d{4})')
+
+
+# Sorting values by gross
+df.sort_values(by="gross", inplace=True, ascending=False)
+
+# displaying all the raws and columns
+pd.set_option('display.max_rows', None)
