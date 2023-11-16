@@ -46,3 +46,6 @@ df["company"].drop_duplicates()
 #High corelation
 # the more budget they spend the more they make
 # Company will have a high corelation
+
+# plotting the budget vs gross
+plt.scatter(x=df["budget"], y=df["gross"])
