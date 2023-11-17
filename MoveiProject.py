@@ -73,4 +73,11 @@ df.corr(method="pearson")
 correlation_matrix= df.corr(method="pearson")
 
 sns.heatmap(correlation_matrix, annot=True)
+plt.title("Correlation Matric for numeric features")
+
+plt.xlabel("Movie Features")
+
+plt.ylabel("Movie Features")
+
+
 plt.show()
