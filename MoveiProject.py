@@ -56,3 +56,9 @@ plt.xlabel("Gross Earning")
 plt.ylabel("Budget Earning")
 
 plt.show()
+
+
+
+#budget vs gross using seaborn
+
+sns.regplot( x="budget", y="gross", data=df, scatter_kws={"color":"red"}, line_kws={"color":"blue"})
