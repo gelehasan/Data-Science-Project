@@ -81,3 +81,13 @@ plt.ylabel("Movie Features")
 
 
 plt.show()
+
+
+df_numerized=df
+
+for colName in df_numerized.columns:
+    if(df_numerized[colName].dtype=="object"):
+        df_numerized[colName]= df_numerized[colName].astype("category")
+        df_numerized[colName] = df_numerized[colName].cat.codes
+
+df_numerized
