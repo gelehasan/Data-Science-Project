@@ -62,3 +62,9 @@ plt.show()
 #budget vs gross using seaborn
 
 sns.regplot( x="budget", y="gross", data=df, scatter_kws={"color":"red"}, line_kws={"color":"blue"})
+
+
+#high correlation between budget and gross, i was write
+df.corr()
+#pearson, kandal, spearman
+df.corr(method="pearson")
