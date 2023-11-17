@@ -91,3 +91,23 @@ for colName in df_numerized.columns:
         df_numerized[colName] = df_numerized[colName].cat.codes
 
 df_numerized
+
+
+correlation_mat=df_numerized.corr()
+
+corr_pairs=correlation_mat.unstack()
+corr_pairs
+
+#faster sorted pairs
+sortedPairs= corr_pairs.sort_values()
+sortedPairs
+
+#high correlation
+high_corr= sortedPairs[(sortedPairs) > 0.5]
+
+high_corr
+
+#votes and budget have the highest correlation to gross earnings
+#company has low correlation
+
+#i was wrong
