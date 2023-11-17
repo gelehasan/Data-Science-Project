@@ -68,3 +68,9 @@ sns.regplot( x="budget", y="gross", data=df, scatter_kws={"color":"red"}, line_k
 df.corr()
 #pearson, kandal, spearman
 df.corr(method="pearson")
+
+
+correlation_matrix= df.corr(method="pearson")
+
+sns.heatmap(correlation_matrix, annot=True)
+plt.show()
