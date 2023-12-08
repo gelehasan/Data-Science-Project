@@ -21,3 +21,8 @@ def page_suraname(soup)
      if th is not None:  
       age = th.findNext("th").text
       return age
+
+
+Row (page_name(soup), page_surname(soup))
+
+row
